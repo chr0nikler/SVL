@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  type: MyString
+  hours: MyString
+  organization: false
+  commments: MyString
+
+two:
+  type: MyString
+  hours: MyString
+  organization: false
+  commments: MyString
