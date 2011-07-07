@@ -10,10 +10,11 @@ class UserController < ApplicationController
       flash[:success] = "Welcome to the SVL!"	    
       redirect_to @user
     else
-      @title = "Sign up"
+      @title = "Home"
       @user.password = nil
       render 'new'
     end
   end
+  yada yada
 
 end
