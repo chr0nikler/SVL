@@ -1,0 +1,35 @@
+<html>
+	<body>
+		<div class = "body">
+			<center><div id = "search_student" class="span-8"><h1>Student Search</h1>
+				<div class = "first">
+					<ul>
+						<div class = "text">
+						<form>
+								
+							<li><input name = "text" name = "first name" placeholder = "First Name" class = "textstyle" ></li>
+							<li><input name = "last name" placeholder = "Last Name" class = "textstyle" ></li>
+							<li><input name = "id" placeholder = "ID number" class = "textstyle"></li>
+							<li><input name = "email" placeholder = "Email" class = "textstyle"></li>
+							<li><input name = "telephone" placeholder = "Telephone" class = "textstyle"></li>
+							<%= link_to "Search", searched_path, :class => "create round" %>
+						</form>
+						</div>
+					</ul>
+				</div>
+			</div></center>
+			<div class= "span-1">
+				<img src="http://i.imgur.com/ZgEQ3.png">
+			</div>
+			<center><div id = "create_new" class="span-8"><h1>Create New Student</h1>
+				<div class = "two">
+					<ul>
+						<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+						<%= link_to "Create", create_student_path, :class => "create round" %>
+					</ul>
+				</div>
+			</div></center>
+		</div>
+	</body>
+</html>
+

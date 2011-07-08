@@ -1,0 +1,45 @@
+<html>
+	<body>
+		<center><div class = containertwo>
+			<section class = "greenbox">
+			
+			<ul>
+				<form>
+				<br>
+				<li><input name = "lname" placeholder = "Last Name" class = "createstyle" ></li>
+				<li><input name = "fname" placeholder = "First Name" class = "createstyle" ></li>
+				<li><input name = "idnumb" placeholder = "ID number" class = "createstyle"></li>
+				<li><input name = "gradyear" placeholder = "Graduation Year" class = "createstyle"></li>
+				<li><input name = "grade" placeholder = "Grade" class = "createstyle"></li>
+				<li><input name = "address1" name = "Address 1" placeholder = "First Name" class = "createstyle" ></li>									<li><input name = "address2" placeholder = "Address 2" class = "createstyle" ></li>
+				<li><input name = "city" placeholder = "City" class = "createstyle"></li>
+				<li><input name = "zip" placeholder = "Zip Code" class = "createstyle"></li>
+				</form>
+			</ul>
+			</section>
+			<aside>
+			<ul>
+				<br><br>
+				<form class = "box">
+				<li><input name = "email1" placeholder = "Email 1" class = "orange" ></li>
+				<li><input type = "checkbox" name: "confirm_email" class = "check"><b>Confirmed</b></li>
+				<li><input name = "email2" placeholder = "Email 2" class = "orange" ></li>
+				<li><input type = "checkbox" name =  "confirm_email" class = "check" ><b>Confirmed</b></li>
+				</form>
+				<form class = "box">
+				<li><input name = "tel1" placeholder = "Telephone 1" class = "orange"></li>
+				<li><input name = "tel2" placeholder = "Telephone 2" class = "orange"></li>
+				</form>
+				<br>
+				<center><%= link_to "New Student", create_student_path, :class => "student round" %></center>
+				<br>
+				<center><%= link_to "Done", logged_in_path, :class => "student round" %></center>
+
+			</ul>
+			</aside>
+		</div></center>
+	</body>
+</html>
+
+
+
