@@ -1,0 +1,44 @@
+<html>
+	<body>
+		<container class= "log">
+		<div class="span-7">
+				<center><ul>
+					<br><br>
+					<li><b><font size = "5">Total Service Hours</font></b><input name = "hours" value = "#" class = "total"></li>
+					<br><br><br>
+					<li><%= link_to "View Previous Services", logged_in_path, :class => "previous round" %></li>
+				</ul></center>
+			</div>
+			<div class= "span-2">
+				<ul>
+					<br>
+					<li><img src="http://i.imgur.com/ZgEQ3.png"></li>
+				</ul>
+			</div>
+			<div class = "span-10">
+				<form>
+					<ul>
+					<br>
+					<li><input name = "dates" placeholder = "Dates" class = "loginput"></li>
+					<li><input name = "org" placeholder = "Nonprofit Organization" class = "loginput"></li>
+					<li><input name = "category" placeholder = "Category" class = "loginput"></li>
+					<li><textarea style = "font-family:Times New Roman" rows = "3" cols = "1" placeholder = "Contribution" class = "impact"></textarea></li>
+					<li><textarea style = "font-family:Times New Roman" rows = "3" cols = "1" placeholder = "Impact" class = "impact"></textarea></li>
+					<li><input name = "newhours" placeholder = "Total Number of Hours" class = "loginput"></li>
+					</ul>
+				</form>
+			</div>
+			<div class = "span-2">
+				<ul>
+					<br><br>
+					<li><%= link_to "Undo", logged_in_path, :class => "previous round" %></li>
+					<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+					<li><%= link_to "Attach Document", logged_in_path, :class => "previous round" %></li>
+					<br>
+					<li><%= link_to "Save & Refresh", logged_in_path, :class => "previous round" %></li>
+				</ul>
+			</div>
+					
+		</container>
+	</body>
+</html>

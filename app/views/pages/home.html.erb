@@ -1,0 +1,37 @@
+<html>
+	<body>
+		<center><div class = "body">
+			<center><div id = "Login" class="span-8"><h1>Login</h1>
+				<div class = "first">
+					<ul>
+						<div class = "text">
+						<form>
+								
+							<li><input name = "username" placeholder = "Username" class = "textstyle" /></li>
+							<li><input type = "password" name = "pxxx" placeholder = "Password" class = "textstyle" /></li>
+							<br>
+							<%= link_to "Login", logged_in_path, :class => "create round" %>
+						</form>
+						</div>
+					</ul>
+				</div>
+			</div></center>
+			<div class= "span-1">
+				<img src="http://i.imgur.com/ZgEQ3.png">
+			</div>
+			<center><div id = "create_new" class="span-8"><h1>Create New Account</h1>
+				<div class = "two">
+					<ul>
+						<li><input name = "email" placeholder = "Email" class = "textstyle" /></li>
+						<li><input name = "new_username" placeholder = "New Username" class = "textstyle" /></li>
+						<li><input type = "password" name: "new_password" placeholder = "New Password" class = "textstyle" /></li>
+						<li><input type = "password" name = "confirm_pxx" placeholder = "Confirm New Password" class = "textstyle" /></li>
+						<%= link_to "Create", '#', :class => "create round" %>
+					</ul>
+				</div>
+			</div></center>
+		</div></center>
+	</body>
+</html>
+
+
