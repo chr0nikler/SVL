@@ -15,6 +15,6 @@ class UserController < ApplicationController
       render 'new'
     end
   end
-  yada yada
+  
 
 end
