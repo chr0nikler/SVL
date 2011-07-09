@@ -1,4 +1,13 @@
 SVL::Application.routes.draw do
+
+  match '/log', :to => 'pages#log'
+
+  match '/previous_services', :to => 'pages#previous_services'
+
+  match '/searched', :to => 'pages#searched'
+
+  match '/logged_in', :to => 'pages#logged_in'
+  match '/create_student', :to => 'pages#create_student'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -48,7 +57,7 @@ SVL::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  # root :to => "welcome#index"
+  root :to => "pages#home"
 
   # See how all your routes lay out with "rake routes"
 
