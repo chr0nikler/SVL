@@ -132,7 +132,7 @@ a.create {
 .span-9 {
 	display: table-cell;  
         width: 350px;  
-	margin-left: 120px;
+	margin-left: 100px;
         padding: 11px;
 	border: solid 3px;
 	border-radius: 30px;

@@ -36,7 +36,7 @@
 			</ul>
 			</div>
 		<div class = "span-2">
-			<br><br><br><br><br><br><br><br><br><br><br>
+			<br><br><br><br><br><br><br>
 			<%= link_to "Done", logged_in_path, :class => "student round" %>
 		</div>
 	</body>
