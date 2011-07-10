@@ -11,9 +11,10 @@ development:
   reconnect: false
   database: SVL_development
   pool: 5
-  username: root
-  password: 1chahal1
+  username: jsc	
+  password: 1chahal2
   host: localhost
+  port: 3306
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -24,8 +25,8 @@ test:
   reconnect: false
   database: SVL_test
   pool: 5
-  username: root
-  password: 1chahal1
+  username: jsc			
+  password: 1chahal2
   host: localhost
 
 production:
@@ -34,6 +35,6 @@ production:
   reconnect: false
   database: SVL_production
   pool: 5
-  username: root
+  username: jsc
   password: 1chahal1
   host: localhost
