@@ -5,7 +5,7 @@ class StudentController < ApplicationController
       flash[:success] = "Student created successfully"
     else
       @title = "Student Creation"
-      render
+      render "new"
     end
   end
 end

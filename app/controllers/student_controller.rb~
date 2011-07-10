@@ -6,6 +6,6 @@ class StudentController < ApplicationController
     else
       @title = "Student Creation"
       render
-
+    end
   end
 end
