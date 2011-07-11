@@ -1,7 +1,9 @@
 <html>
- 	<body>		
-			<div class = "span-9">
-			<ul>
+	<body>
+		<center><div class = body>
+			<div class = "span-10">
+				<div class = "greenbox">
+				<ul>
 				<form>
 				<br>
 				<li><input name = "lname" placeholder = "Last Name" class = "createstyle" ></li>
@@ -15,7 +17,9 @@
 				</form>
 			</ul>
 			</div>
+			</div>
 			<div class = "span-8">
+				<div class = "orangebox">
 			<ul>
 				<br><br>
 				<form class = "box">
@@ -35,10 +39,12 @@
 
 			</ul>
 			</div>
-		<div class = "span-2">
-			<br><br><br><br><br><br><br>
+			</div>
+			<div class = "span-2">
+				<br><br><br><br><br><br><br><br><br><br><br>
 			<%= link_to "Done", logged_in_path, :class => "student round" %>
 		</div>
+	</div>	</center>
 	</body>
 </html>
 
