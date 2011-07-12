@@ -128,12 +128,20 @@ a.create {
 
 /* Create_Student */
 
+<<<<<<< HEAD
 .span-8 {
 	margin-left: 100px;
 }
 .greenbox {
 	display: table-cell;  
         width: 350px;  
+=======
+
+.greenbox {
+	display: table-cell;  
+        width: 350px;  
+	margin-left: 120px;
+>>>>>>> upstream/master
         padding: 11px;
 	border: solid 3px;
 	border-radius: 30px;

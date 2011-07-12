@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <html>
 	<body>
 		<center><div class = body>
@@ -47,6 +48,55 @@
 	</div>	</center>
 	</body>
 </html>
+=======
+<h1>Create New Student<h1>
+
+<%= form_for(@student) do |f| %>
+  <div class="field">
+    <%= f.label :lastname %><br />
+    <%= f.text_field :lastname %>
+  </div>
+  <div class="field">
+    <%= f.label :firstname %><br />
+    <%= f.text_field :firstname %>
+  </div>
+  <div class="field">
+    <%= f.label :studentid %><br />
+    <%= f.text_field :studentid %>
+  </div>
+  <div class="field">
+    <%= f.label :graduationyear %><br />
+    <%= f.text_field :graduationyear %>
+  </div>
+  <div class="field">
+    <%= f.label :grade %><br />
+    <%= f.text_field :grade %>
+  </div>
+  <div class="field">
+    <%= f.label :address1 %><br />
+    <%= f.text_field :address2 %>
+  </div>
+  <div class="field">
+    <%= f.label :city %><br />
+    <%= f.text_field :zip %>
+  </div>
+  <div class="field">
+    <%= f.label :telephone1 %><br />
+    <%= f.text_field :telephone1 %>
+  </div> <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :telephone2 %><br />
+    <%= f.text_field :telephone2 %>
+  </div>
+  <div class="actions">
+    <%= f.submit "Save" %>
+  </div>
+<% end %>
+
+>>>>>>> upstream/master
 
 
 
