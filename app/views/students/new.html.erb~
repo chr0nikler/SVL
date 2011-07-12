@@ -1,6 +1,6 @@
 <h1>Create New Student<h1>
 
-<%= form_for(student) do |f| %>
+<%= form_for @student do |f| %>
   <div class="field">
     <%= f.label :lastname %><br />
     <%= f.text_field :lastname %>
@@ -10,8 +10,8 @@
     <%= f.text_field :firstname %>
   </div>
   <div class="field">
-    <%= f.label :studentid %><br />
-    <%= f.text_field :studentid %>
+    <%= f.label :IDnumber %><br />
+    <%= f.text_field :IDnumber %>
   </div>
   <div class="field">
     <%= f.label :graduationyear %><br />
@@ -32,10 +32,6 @@
   <div class="field">
     <%= f.label :telephone1 %><br />
     <%= f.text_field :telephone1 %>
-  </div> <div class="field">
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
-  </div>
   <div class="field">
     <%= f.label :telephone2 %><br />
     <%= f.text_field :telephone2 %>

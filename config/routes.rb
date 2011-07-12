@@ -1,4 +1,5 @@
 SVL::Application.routes.draw do
+  resources :students
 
   match '/log', :to => 'pages#log'
 
@@ -7,7 +8,8 @@ SVL::Application.routes.draw do
   match '/searched', :to => 'pages#searched'
 
   match '/logged_in', :to => 'pages#logged_in'
-  match '/create_student', :to => 'pages#create_student'
+  match '/new', :to => 'students#new'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

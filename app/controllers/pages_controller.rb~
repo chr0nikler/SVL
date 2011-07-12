@@ -1,4 +1,7 @@
 class PagesController < ApplicationController
+  def logo
+  end
+
   def home
   end
 
@@ -12,6 +15,7 @@ class PagesController < ApplicationController
   end
 
   def create_student
+    @student = Student.new
   end
 
   def log
