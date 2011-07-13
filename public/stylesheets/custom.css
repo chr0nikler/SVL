@@ -166,6 +166,8 @@ a.create {
 .createstyle:focus {
 	background-color: white;
 }
+
+]
 .orangebox ul li {
 	list-style-type: none;
 }
@@ -283,3 +285,19 @@ a.previous {
 	font-size: 180%;
 	padding: 6px;
 	border: solid 2px;
+}
+
+/* New Student */
+
+.greentext {
+	width: 320px;
+	font-size: 20px;
+	padding: 6px;
+	border-radius: 7px;
+
+}
+
+.checkbox {
+	text-align: left;
+}
+
