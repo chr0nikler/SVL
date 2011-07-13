@@ -1,45 +1,55 @@
-<h1>Create New Student<h1>
-
+<center><h1><b>Create New Student<b><h1></center>
+<center><div class = "greenbox">
 <%= form_for @student do |f| %>
   <%= render 'shared/error_messages' %>
-  <div class="field">
-    <%= f.label :lastname %><br />
-    <%= f.text_field :lastname %>
-  </div>
-  <div class="field">
-    <%= f.label :firstname %><br />
-    <%= f.text_field :firstname %>
-  </div>
-  <div class="field">
-    <%= f.label :IDnumber %><br />
-    <%= f.text_field :IDnumber %>
-  </div>
-  <div class="field">
-    <%= f.label :graduationyear %><br />
-    <%= f.text_field :graduationyear %>
-  </div>
-  <div class="field">
-    <%= f.label :grade %><br />
-    <%= f.text_field :grade %>
-  </div>
-  <div class="field">
-    <%= f.label :address1 %><br />
-    <%= f.text_field :address2 %>
-  </div>
-  <div class="field">
-    <%= f.label :city %><br />
-    <%= f.text_field :zip %>
-  </div>
-  <div class="field">
-    <%= f.label :telephone1 %><br />
-    <%= f.text_field :telephone1 %>
-  <div class="field">
-    <%= f.label :telephone2 %><br />
-    <%= f.text_field :telephone2 %>
-  </div>
+    <%= f.text_field :lastname, :class => "greentext", :placeholder => "Last Name" %>
+  
+     <%= f.text_field :firstname, :class => "greentext", :placeholder => "First Name"  %>
+  
+  
+    <%= f.text_field :IDnumber, :class => "greentext", :placeholder => "ID number" %>
+  
+  
+    <%= f.text_field :graduationyear, :class => "greentext", :placeholder => "Graduation Year" %>
+  
+  
+    <%= f.text_field :grade, :class => "greentext", :placeholder => "Grade" %>
+  
+  
+    <%= f.text_field :address1, :class => "greentext", :placeholder => "Address 1" %>
+  
+  
+    <%= f.text_field :address2, :class => "greentext", :placeholder => "Address 2" %>
+  
+  
+    <%= f.text_field :zip, :class => "greentext", :placeholder => "Zip" %>
+</div>
+  
+
+<div class = "orangebox">
+	<br>
+<div class ="box">
+	<%= f.text_field :email1, :class => "orange", :placeholder => "Email Address 1" %>
+    <div class = checkbox>	
+	    <%= f.check_box :confirmed1, :class => "checkbox" %><font size= "3">Confirmed</font>
+    </div>
+    <%= f.text_field :email2, :class => "orange", :placeholder => "Email Address 2" %>
+    <div class = checkbox>
+	    <%= f.check_box :confirmed2, :class => "checkbox" %><font size= "3">Confirmed</font>
+    </div>
+</div>
+<br>
+  
+<div class = "box">
+	<%= f.text_field :telephone1, :class => "orange", :placeholder => "Telephone Number 1" %>
+	<%= f.text_field :telephone2, :class => "orange", :placeholder => "Telephone Number 2"  %>
+</div>
+  
   <div class="actions">
-    <%= f.submit "Save" %>
+	  <%= f.submit "Save", :class => "create round" %>
   </div>
+  
+</center>
 <% end %>
 
 
