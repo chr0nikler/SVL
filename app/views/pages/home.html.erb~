@@ -1,40 +1,58 @@
-<html>
-<h1>Pages#contact</h1>
-<p>Find me in app/views/pages/contact.html.erb</p>
-	
-	<body>
-		<center><div class = "body">
-			<center><div id = "Login" class="span-8"><h1>Login</h1>
-				<div class = "first">
-					<ul>
-						<div class = "text">
-						<form>
-								
-							<li><input name = "username" placeholder = "Username" class = "textstyle" /></li>
-							<li><input type = "password" name = "pxxx" placeholder = "Password" class = "textstyle" /></li>
-							<br>
-							<%= link_to "Login", logged_in_path, :class => "create round" %>
-						</form>
-						</div>
-					</ul>
-				</div>
-			</div></center>
-			<div class= "span-1">
-				<img src="http://i.imgur.com/ZgEQ3.png">
-			</div>
-			<center><div id = "create_new" class="span-8"><h1>Create New Account</h1>
-				<div class = "two">
-					<ul>
-						<li><input name = "email" placeholder = "Email" class = "textstyle" /></li>
-						<li><input name = "new_username" placeholder = "New Username" class = "textstyle" /></li>
-						<li><input type = "password" name: "new_password" placeholder = "New Password" class = "textstyle" /></li>
-						<li><input type = "password" name = "confirm_pxx" placeholder = "Confirm New Password" class = "textstyle" /></li>
-						<%= link_to "Create", '#', :class => "create round" %>
-					</ul>
-				</div>
-			</div></center>
-		</div></center>
-	</body>
-</html>
+<center><h1><b>Create New Student<b><h1></center>
+<center><div class = "greenbox">
+<%= form_for @user do |f| %>
+  <%= render 'shared/error_messages' %>
+    <%= f.text_field :lastname, :class => "greentext", :placeholder => "Last Name" %>
+  
+     <%= f.text_field :firstname, :class => "greentext", :placeholder => "First Name"  %>
+  
+  
+    <%= f.text_field :IDnumber, :class => "greentext", :placeholder => "ID number" %>
+  
+  
+    <%= f.text_field :graduationyear, :class => "greentext", :placeholder => "Graduation Year" %>
+  
+  
+    <%= f.text_field :grade, :class => "greentext", :placeholder => "Grade" %>
+  
+  
+    <%= f.text_field :address1, :class => "greentext", :placeholder => "Address 1" %>
+  
+  
+    <%= f.text_field :address2, :class => "greentext", :placeholder => "Address 2" %>
+  
+  
+    <%= f.text_field :zip, :class => "greentext", :placeholder => "Zip" %>
+</div>
+  
+
+<div class = "orangebox">
+	<br>
+<div class ="box">
+	<%= f.text_field :email1, :class => "orange", :placeholder => "Email Address 1" %>
+    <div class = checkbox>	
+	    <%= f.check_box :confirmed1, :class => "checkbox" %><font size= "3">Confirmed</font>
+    </div>
+    <%= f.text_field :email2, :class => "orange", :placeholder => "Email Address 2" %>
+    <div class = checkbox>
+	    <%= f.check_box :confirmed2, :class => "checkbox" %><font size= "3">Confirmed</font>
+    </div>
+</div>
+<br>
+  
+<div class = "box">
+	<%= f.text_field :telephone1, :class => "orange", :placeholder => "Telephone Number 1" %>
+	<%= f.text_field :telephone2, :class => "orange", :placeholder => "Telephone Number 2"  %>
+</div>
+  
+  <div class="actions">
+	  <%= f.submit "Save" %>
+  </div>
+  
+</center>
+<% end %>
+
+
+
 
 

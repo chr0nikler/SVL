@@ -24,18 +24,14 @@ section h1 {
 
 /* Home OR Logged In*/
 
-.body {
-	font-size: 100%;
-	margin-left: 130px;
 
+.home {
+	margin-left: 200px;
 }
 
-.first ul li {
+.span-8 ul li {
 	list-style-type: none;
-	padding: 5px;
 }
-
-	
 
 .textstyle {
 	border-radius: 10px;
@@ -46,10 +42,6 @@ section h1 {
 	border: solid 2px;
 }
 
-.two ul li {
-	list-style-type: none;
-	padding: 5px;
-}
 input.textstyle:focus  {
 	background-color: white;
 }
@@ -298,6 +290,6 @@ a.previous {
 }
 
 .checkbox {
-	font-size: 20px;
+	text-align: left;
 }
 
