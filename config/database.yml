@@ -9,7 +9,7 @@ development:
   adapter: mysql2
   encoding: utf8
   reconnect: false
-  database: SVL_development
+  database: svl_development
   pool: 5
   username: jsc	
   password: 1chahal2
@@ -23,7 +23,7 @@ test:
   adapter: mysql2
   encoding: utf8
   reconnect: false
-  database: SVL_test
+  database: svl_test
   pool: 5
   username: jsc			
   password: 1chahal2
@@ -33,7 +33,7 @@ production:
   adapter: mysql2
   encoding: utf8
   reconnect: false
-  database: SVL_production
+  database: svl_production
   pool: 5
   username: jsc
   password: 1chahal1

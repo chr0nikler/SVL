@@ -29,10 +29,14 @@
 <div class = "orangebox">
 	<br>
 <div class ="box">
-    <%= f.text_field :email1, :class => "orange", :placeholder => "Email Address 1" %>  
-    <%= f.check_box :confirmed1, :class => "checkbox" %><font size= "3">Confirmed</font>
+	<%= f.text_field :email1, :class => "orange", :placeholder => "Email Address 1" %>
+    <div class = checkbox>	
+	    <%= f.check_box :confirmed1, :class => "checkbox" %><font size= "3">Confirmed</font>
+    </div>
     <%= f.text_field :email2, :class => "orange", :placeholder => "Email Address 2" %>
-    <text align = right><%= f.check_box :confirmed2, :class => "checkbox" %><font size= "3">Confirmed</font></text>
+    <div class = checkbox>
+	    <%= f.check_box :confirmed2, :class => "checkbox" %><font size= "3">Confirmed</font>
+    </div>
 </div>
 <br>
   
@@ -42,7 +46,7 @@
 </div>
   
   <div class="actions">
-	  <%= f.submit "Save", :class => "create round" %>
+	  <%= f.submit "Save", %>
   </div>
   
 </center>
