@@ -1,9 +1,15 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
 one:
+  email: MyString
   username: MyString
   password: MyString
+  password_confirmation: MyString
+  student: false
 
 two:
+  email: MyString
   username: MyString
   password: MyString
+  password_confirmation: MyString
+  student: false
