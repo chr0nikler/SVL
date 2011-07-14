@@ -12,9 +12,10 @@
 <body>
     <%= render 'layouts/header' %>
     <div class="container">
-      <section class="round">
+
+      <center><section class="round">
         <%= yield %>
-      </section>
+	</section></center>
     </div>
   </body>
 </html>
