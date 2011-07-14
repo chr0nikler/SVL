@@ -10,41 +10,15 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110710015255) do
+ActiveRecord::Schema.define(:version => 20110714172757) do
 
-  create_table "services", :force => true do |t|
-    t.string   "type"
-    t.string   "hours"
-    t.boolean  "organization"
-    t.string   "commments"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
+# Could not dump table "services" because of following ArgumentError
+#   invalid date
 
-  create_table "students", :force => true do |t|
-    t.string   "lastname"
-    t.string   "firstname"
-    t.string   "IDnumber"
-    t.string   "graduationyear"
-    t.string   "grade"
-    t.string   "address1"
-    t.string   "address2"
-    t.string   "zip"
-    t.string   "email1"
-    t.boolean  "confirmed1"
-    t.string   "email2"
-    t.boolean  "confirmed2"
-    t.string   "telephone1"
-    t.string   "telephone2"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
+# Could not dump table "students" because of following ArgumentError
+#   invalid date
 
-  create_table "users", :force => true do |t|
-    t.string   "username"
-    t.string   "password"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
+# Could not dump table "users" because of following ArgumentError
+#   invalid date
 
 end

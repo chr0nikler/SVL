@@ -33,8 +33,11 @@
 </div>
   
   <div class="actions">
+<<<<<<< HEAD
 	  <%= f.submit "Save", :class => "create round" %>
-
+=======
+	  <%= f.submit "Save" %>
+>>>>>>> f484d3f6e0163291c67bd6f6161d42c1897c5ea4
   </div>
   
 </center>
