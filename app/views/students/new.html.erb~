@@ -4,12 +4,12 @@
   <%= render 'shared/error_messages' %>
     <%= f.text_field :lastname, :class => "greentext", :placeholder => "Last Name" %>
     <%= f.text_field :firstname, :class => "greentext", :placeholder => "First Name"  %>
-    <%= f.number_field :IDnumber, :class => "greentext", :placeholder => "ID number" %>
+    <%= f.text_field :IDnumber, :class => "greentext", :placeholder => "ID number" %>
     <%= f.text_field :graduationyear, :class => "greentext", :placeholder => "Graduation Year" %>
     <%= f.text_field :grade, :class => "greentext", :placeholder => "Grade" %>
     <%= f.text_field :address1, :class => "greentext", :placeholder => "Address 1" %>
     <%= f.text_field :address2, :class => "greentext", :placeholder => "Address 2" %>
-    <%= f.number_field :zip, :class => "greentext", :placeholder => "Zip" %>
+    <%= f.text_field :zip, :class => "greentext", :placeholder => "Zip" %>
 </div>
   
 
@@ -20,7 +20,7 @@
     <div class = checkbox>	
 	    <%= f.check_box :confirmed1, :class => "checkbox" %><font size= "3">Confirmed</font>
     </div>
-   	    <%= f.text_field :email2, :class => "orange", :placeholder => "Email Address 2" %>
+    <%= f.text_field :email2, :class => "orange", :placeholder => "Email Address 2" %>
     <div class = checkbox>
 	    <%= f.check_box :confirmed2, :class => "checkbox" %><font size= "3">Confirmed</font>
     </div>
@@ -28,12 +28,16 @@
 <br>
   
 <div class = "box">
-	<%= f.number_field :telephone1, :class => "orange", :placeholder => "Telephone Number 1" %>
-	<%= f.number_field :telephone2, :class => "orange", :placeholder => "Telephone Number 2"  %>
+	<%= f.text_field :telephone1, :class => "orange", :placeholder => "Telephone Number 1" %>
+	<%= f.text_field :telephone2, :class => "orange", :placeholder => "Telephone Number 2"  %>
 </div>
   
   <div class="actions">
+<<<<<<< HEAD
+	  <%= f.submit "Save", :class => "create round" %>
+=======
 	  <%= f.submit "Save" %>
+>>>>>>> f484d3f6e0163291c67bd6f6161d42c1897c5ea4
   </div>
   
 </center>
