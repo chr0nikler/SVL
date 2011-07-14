@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
   def login
+    redirect_to logged_in_path
   end
   def logout
   end
@@ -7,13 +8,14 @@ class UsersController < ApplicationController
     @user = User.new(params[:user])
     if @user.save
       flash[:success] = "Welcome to the SVL!"	    
-      redirect_to @user
+      render :action => "new"
     else
+      render "new"
     end
   end
   def new
     @user = User.new
-    render 'new'
+    render :action => "new"
   end
 end
 

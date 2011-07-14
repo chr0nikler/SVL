@@ -25,7 +25,7 @@
 				<div class = "two">
 					<ul>
 						<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-						<%= link_to "Create", create_student_path, :class => "create round" %>
+						<%= link_to "Create", students/new_path, :class => "create round" %>
 					</ul>
 				</div>
 			</div></center>
