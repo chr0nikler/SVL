@@ -1,7 +1,5 @@
 class UsersController < ApplicationController
-  def login
-    redirect_to logged_in_path
-  end
+  
   def logout
   end
   def create
