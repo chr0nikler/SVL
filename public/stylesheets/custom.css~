@@ -179,7 +179,7 @@ a.create {
 
 .orangebox {
 	display: table-cell;  
-        width: 300px;  
+        width: 250px;  
         padding-right: 2px;
 	border: solid 3px;
 	border-radius: 30px;

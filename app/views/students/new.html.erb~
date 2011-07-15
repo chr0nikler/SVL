@@ -33,12 +33,17 @@
 </div>
   
   <div class="actions">
-<<<<<<< HEAD
-	  <%= f.submit "Save", :class => "create round" %>
-=======
-	  <%= f.submit "Save" %>
->>>>>>> f484d3f6e0163291c67bd6f6161d42c1897c5ea4
+	  <%= f.submit "Save", :type => :image, :src => "/images/SaveButton.png"%>
   </div>
+  <br><br><br>
+  <div class="other">
+	  <%= link_to "", logged_in_path, :class => "newstudent" %>
+  </div>
+  <br>
+  <div class="other">
+	  <%= link_to "", logged_in_path, :class => "done" %>
+  </div>
+</div>
   
 </center>
 <% end %>
