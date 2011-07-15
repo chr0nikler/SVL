@@ -9,7 +9,7 @@ SVL::Application.routes.draw do
   match '/searched', :to => 'pages#searched'
 
   match '/logged_in', :to => 'pages#logged_in'
-  match 'students/new', :to => 'students#new'
+  match '/students_new', :to => 'students#new'
   match '/index', :to => 'pages#index'
 
   # The priority is based upon order of creation:
