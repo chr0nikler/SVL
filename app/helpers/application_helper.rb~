@@ -1,5 +1,8 @@
 module ApplicationHelper
     def logo
-      @logo = image_tag("sample app logo.png", :alt => "Sample App", :class => "      round")
+      @logo = image_tag("logo.png", :alt => "Elrel", :class => "round")
+    end
+    def signed_in?
+      !current_user.nil?
     end
 end

@@ -1,56 +1,38 @@
-<center><h1><b>Create New Student<b><h1></center>
-<center><div class = "greenbox">
-<%= form_for @user do |f| %>
-  <%= render 'shared/error_messages' %>
-    <%= f.text_field :lastname, :class => "greentext", :placeholder => "Last Name" %>
-  
-     <%= f.text_field :firstname, :class => "greentext", :placeholder => "First Name"  %>
-  
-  
-    <%= f.text_field :IDnumber, :class => "greentext", :placeholder => "ID number" %>
-  
-  
-    <%= f.text_field :graduationyear, :class => "greentext", :placeholder => "Graduation Year" %>
-  
-  
-    <%= f.text_field :grade, :class => "greentext", :placeholder => "Grade" %>
-  
-  
-    <%= f.text_field :address1, :class => "greentext", :placeholder => "Address 1" %>
-  
-  
-    <%= f.text_field :address2, :class => "greentext", :placeholder => "Address 2" %>
-  
-  
-    <%= f.text_field :zip, :class => "greentext", :placeholder => "Zip" %>
+<center><div class = "home">
+<div class = "span-8">
+	<center><ul>
+		<%= form_tag @user, :url => logged_in_path do %>
+		<li><h1><b>Login</b></h1></li>	
+		<li><%= text_field_tag :username, :class => "textstyle", :placeholder => "Username" %></li>
+		<li><%= password_field_tag :password, :class => "textstyle", :placeholder => "Password" %></li>
+		<div class="actions">
+			<li><%= submit_tag "Login"%><li>
+		</div>
+		<% end %>
+	</ul></center>
 </div>
-  
+<div class= "span-1">
+	<center><img src="http://i.imgur.com/ZgEQ3.png"><center>
+</div>
 
-<div class = "orangebox">
-	<br>
-<div class ="box">
-	<%= f.text_field :email1, :class => "orange", :placeholder => "Email Address 1" %>
-    <div class = checkbox>	
-	    <%= f.check_box :confirmed1, :class => "checkbox" %><font size= "3">Confirmed</font>
-    </div>
-    <%= f.text_field :email2, :class => "orange", :placeholder => "Email Address 2" %>
-    <div class = checkbox>
-	    <%= f.check_box :confirmed2, :class => "checkbox" %><font size= "3">Confirmed</font>
-    </div>
+<div class = "span-8">
+	<center><ul>
+		<%= form_tag @user do  %>
+		<li><h1><b>New Account</b></h1></li>	
+		
+		<li><%= text_field_tag :email, :class => "textstyle", :placeholder => "Email" %></li>
+		<li><%= text_field_tag :username, :class => "textstyle", :placeholder => "New Username" %></li>
+		<li><%= password_field_tag :password, :class => "textstyle", :placeholder => "Password" %></li>
+		<li><%= password_field_tag :password_confirmation, :class => "textstyle", :placeholder => "Confirm Password" %></li>
+		<div class="actions">
+			<li><%= submit_tag "Create"  %><li>
+		</div>
+		<% end %>
+	</ul></center>
 </div>
-<br>
-  
-<div class = "box">
-	<%= f.text_field :telephone1, :class => "orange", :placeholder => "Telephone Number 1" %>
-	<%= f.text_field :telephone2, :class => "orange", :placeholder => "Telephone Number 2"  %>
-</div>
-  
-  <div class="actions">
-	  <%= f.submit "Save" %>
-  </div>
-  
-</center>
-<% end %>
+</div></center>
+
+
 
 
 
