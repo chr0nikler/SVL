@@ -1,19 +1,30 @@
->
+<center><div class = "home">
+<div class = "span-8">
+	<center><ul>
+		<%= form_tag @user, :url => logged_in_path do %>
+		<li><h1><b>Login</b></h1></li>	
+		<li><%= text_field_tag :username, :class => "textstyle", :placeholder => "Username" %></li>
+		<li><%= password_field_tag :password, :class => "textstyle", :placeholder => "Password" %></li>
+		<div class="actions">
+			<li><%= submit_tag "Login"%><li>
+		</div>
+		<% end %>
+	</ul></center>
+</div>
 <div class= "span-1">
 	<center><img src="http://i.imgur.com/ZgEQ3.png"><center>
 </div>
 
 <div class = "span-8">
 	<center><ul>
-		<%= form_for @user do |f| %>
+		<%= form_for @user do |f|  %>
 		<li><h1><b>New Account</b></h1></li>	
-		<li><%= render 'shared/error_messages_user' %></li>
 		<li><%= f.text_field :email, :class => "textstyle", :placeholder => "Email" %></li>
 		<li><%= f.text_field :username, :class => "textstyle", :placeholder => "New Username" %></li>
 		<li><%= f.password_field :password, :class => "textstyle", :placeholder => "Password" %></li>
 		<li><%= f.password_field :password_confirmation, :class => "textstyle", :placeholder => "Confirm Password" %></li>
 		<div class="actions">
-			<li><%= f.submit "Create"  %><li>
+			<li><%= submit_tag "Create"  %><li>
 		</div>
 		<% end %>
 	</ul></center>
