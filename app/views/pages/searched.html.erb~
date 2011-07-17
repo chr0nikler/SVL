@@ -1,0 +1,20 @@
+<html>
+	<body>
+		<section class = "searchscreen">
+		<b>  You searched for:</b>
+		<div class = "searched for"
+			<% form_tag students_path do %>
+				<% text_field_tag :search, :value => {params[:search] params[:search] params[:search]}, :class => "search" %>
+			<% end %>
+		</div>
+
+		</section>
+		<br>
+		<article>
+		<h3>Search Results:</h3>
+		<ul>
+			<li><%= link_to "", '#', :class => "create round" %></li>
+		</ul>
+		</article>
+	</body>
+</html>

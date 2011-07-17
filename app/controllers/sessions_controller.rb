@@ -1,5 +1,6 @@
 class SessionsController < ApplicationController
   def new
+    @session = Session.new
     @title = "Sign in"
   end
   def create
@@ -11,7 +12,7 @@ class SessionsController < ApplicationController
       render 'new'
     else 
       sign_in user
-      redirect_back_or user
+      render 'searches/new'
     end
   end
 end

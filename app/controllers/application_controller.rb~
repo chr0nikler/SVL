@@ -1,8 +1,4 @@
 class ApplicationController < ActionController::Base
-  helper_method :signed_in?
   include SessionsHelper
   protect_from_forgery
-  def signed_in?
-    !current_user.nil?
-  end
 end

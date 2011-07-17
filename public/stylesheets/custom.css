@@ -16,7 +16,20 @@ header img {
   padding: 1em;
 }
 
+.newstudent {
+	background-image:url(/images/newstudentbutton.png);
+	padding-left: 129px;
+	padding-top: 80px;
+}
 
+ 
+.done {
+	background-image:url(/images/donebutton.png);
+	padding-left: 129px;
+	padding-top: 60px;
+
+
+}
 
 section h1 {
   font-size: 200%;
@@ -33,6 +46,10 @@ section h1 {
 	list-style-type: none;
 }
 
+.students_search {
+	margin-left: 150px;
+}
+
 .textstyle {
 	border-radius: 10px;
 	background-color: #66ff66;	
@@ -44,6 +61,12 @@ section h1 {
 
 input.textstyle:focus  {
 	background-color: white;
+}
+
+.createnewstudent {
+	background-image:url(/images/createbutton.png);
+	padding-left: 129px;
+	padding-top: 80px;
 }
 
 
@@ -86,7 +109,7 @@ nav ul li {
 
 nav ul li a {
   padding: 0 5px;
-}
+}<%= params[:search] %>
 
 nav ul li a:visited {
   color: #09c;
@@ -197,15 +220,19 @@ a.student {
 
 /* Searched */
 
-.searched {
-	border-radius: 10px;
-	width: 800px;
-	font-size: 100%;
-	padding: 6px;
-}
+
 
 .searchscreen {
 	font-size: 20px;
+}
+
+.search {
+	border-radius: 10px;
+	background-color: #66ff66;	
+	font-size: 130%;
+	padding: 7px;
+	border: solid 2px;
+	width: 1000px;
 }
 
 article ul li {

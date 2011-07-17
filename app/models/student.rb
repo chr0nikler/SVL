@@ -5,4 +5,5 @@ class Student < ActiveRecord::Base
   validates :firstname, :presence => true
   validates :IDnumber, :presence => true
 
+
 end

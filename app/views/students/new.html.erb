@@ -33,9 +33,17 @@
 </div>
   
   <div class="actions">
-	  <%= f.submit "Save", :class => "create round" %>
-
+	  <%= f.submit "Save", :type => :image, :src => "/images/SaveButton.png"%>
   </div>
+  <br><br><br>
+  <div class="other">
+	  <%= link_to "", students_new_path, :class => "newstudent" %>
+  </div>
+  <br>
+  <div class="other">
+	  <%= link_to "", logged_in_path, :class => "done" %>
+  </div>
+</div>
   
 </center>
 <% end %>
