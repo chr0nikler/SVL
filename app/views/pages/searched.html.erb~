@@ -4,7 +4,7 @@
 		<b>  You searched for:</b>
 		<div class = "searched for"
 			<% form_tag students_path do %>
-				<% text_field_tag :search, params[:search], :class => "search" %>
+				<% text_field_tag :search, :value => {params[:search] params[:search] params[:search]}, :class => "search" %>
 			<% end %>
 		</div>
 

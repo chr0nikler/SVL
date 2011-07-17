@@ -1,0 +1,31 @@
+<div class = "students_search">
+	<div class = "span-8">
+		<center><h1><b>Search Student</b></h1>
+		<ul>
+			<%= form_for :search, :url => searches_path do  |f| %>
+				<p>
+				<li><%= f.text_field :firstname, :placeholder => "First Name", :class => "textstyle" %></li>
+				<li><%= f.text_field :lastname, :placeholder => "Last Name", :class => "textstyle" %></li>
+				<li><%= f.text_field :IDnumber, :placeholder => "ID number", :class => "textstyle" %></li>
+				<li><%= f.text_field :email, :placeholder => "Email", :class => "textstyle" %></li>
+				<li><%= f.text_field :telephone, :placeholder => "Telephone", :class => "textstyle" %></li>
+				<li><%= f.submit "", :type => :image, :src => "/images/SearchButton.png" %></li>
+				</p>
+			<% end %>
+	</ul></center>
+	</div>
+</div>
+<div class = "line">
+	<div class = "span-2">
+		<center><img src="http://i.imgur.com/ZgEQ3.png"><center>
+	</div>
+</div>
+
+<div class = "create_student">
+	<div class = "span-8">
+		<center><h1><b>Create  New Student</b></h1>
+		<br><br><br><br><br><br>
+		<%= link_to "", students_new_path, :class => "createnewstudent" %>
+	</div>
+</div>
+

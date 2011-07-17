@@ -12,6 +12,13 @@ class StudentsController < ApplicationController
       render "new"
     end
   end
-  
+  def index
+    if params[:search] 
+      @student = Student.find(:all, :conditions => ["firstname like ?", "%#{params[:search]}%"])
+    else 
+      @student = Student.find(:all)
+     
+    end
+  end
 
 end

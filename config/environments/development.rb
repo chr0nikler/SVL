@@ -26,6 +26,7 @@ SVL::Application.configure do
 	  :password => "secret"
 
 
+
   # Print deprecation notices to the Rails logger
   config.active_support.deprecation = :log
 

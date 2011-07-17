@@ -1,13 +1,17 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
 one:
-  type: MyString
-  hours: MyString
-  organization: false
-  commments: MyString
+  dates: MyString
+  organization: MyString
+  category: 1
+  contribution: MyString
+  impact: MyString
+  hours: 1
 
 two:
-  type: MyString
-  hours: MyString
-  organization: false
-  commments: MyString
+  dates: MyString
+  organization: MyString
+  category: 1
+  contribution: MyString
+  impact: MyString
+  hours: 1

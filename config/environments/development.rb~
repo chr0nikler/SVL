@@ -17,13 +17,17 @@ SVL::Application.configure do
   # Don't care if the mailer can't send
   config.action_mailer.raise_delivery_errors = false
 
-  config.action_mailoer.smtp_settings = {
+  config.action_mailer.smtp_settings = {
 	  :address => "smtp.example.com",
 	  :port => 25,
 	  :domain => "www.example.com",
 	  :authentification => :login,
 	  :user_name => "www",
 	  :password => "secret"
+<<<<<<< HEAD
+  }
+=======
+>>>>>>> e6dd5c68df98eb651ccb37a7a6f96089bcfd7caf
 
 
   # Print deprecation notices to the Rails logger
