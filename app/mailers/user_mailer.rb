@@ -5,4 +5,5 @@ class UserMailer < ActionMailer::Base
 	  recipients user.email
 	  subject    "Thank you for Registering"
 	  body       :user => user
+  end
 end

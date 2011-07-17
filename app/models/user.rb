@@ -1,7 +1,5 @@
 class User < ActiveRecord::Base
-<<<<<<< HEAD
-	attr_accessor :email, :username, :password, :password_confirmation
-=======
+  attr_accessor :email, :username, :password, :password_confirmation
   attr_accessible :email, :username, :password, :password_confirmation, :student
   validates :password_confirmation, :presence => true
   email_regex = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
@@ -19,6 +17,5 @@ class User < ActiveRecord::Base
     return nil  if user.nil?
     return user if user.has_password?(submitted_password)
   end
->>>>>>> upstream/master
 end
 
