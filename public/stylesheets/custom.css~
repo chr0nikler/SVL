@@ -42,7 +42,7 @@ section h1 {
 	margin-left: 150px;
 }
 .retard {
-	margin-left: 450px;
+	margin-left: 400px;
 }
 .span-8 ul li {
 	list-style-type: none;

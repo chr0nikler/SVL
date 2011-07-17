@@ -1,15 +1,16 @@
 <center><div class = "home">
 <div class = "span-8">
 	<center><ul>
-			<%= form_for(:session, :url => sessions(@search, :url => searches_path, :controller => searches_path) do |f| %>
+			<%= form_for(:session, :url => sessions_path) do |f| %>
 		<li><h1><b>Login</b></h1></li>	
 		<li><%= f.text_field :username, :class => "textstyle", :placeholder => "Username" %></li>
 		<li><%= f.password_field :password, :class => "textstyle", :placeholder => "Password" %></li>
 		<div class="actions">
 			<%= f.submit "Login" %>
 		</div>
-		<% end %>
-	</ul></center>
+	<% end %>
+</ul></center>
+	
 </div>
 <div class= "span-1">
 	<center><img src="http://i.imgur.com/ZgEQ3.png"><center>

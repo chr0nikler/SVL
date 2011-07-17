@@ -24,7 +24,10 @@ SVL::Application.configure do
 	  :authentification => :login,
 	  :user_name => "www",
 	  :password => "secret"
-
+<<<<<<< HEAD
+  }
+=======
+>>>>>>> e6dd5c68df98eb651ccb37a7a6f96089bcfd7caf
 
 
   # Print deprecation notices to the Rails logger
