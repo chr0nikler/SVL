@@ -1,12 +1,20 @@
 <center><div class = "home">
 <div class = "span-8">
 	<center><ul>
+<<<<<<< HEAD
 			<%= form_for(:session, :url => sessions_path) do |f| %>
+=======
+			<%= form_for(:session) do |f| %>
+>>>>>>> upstream/master
 		<li><h1><b>Login</b></h1></li>	
 		<li><%= f.text_field :username, :class => "textstyle", :placeholder => "Username" %></li>
 		<li><%= f.password_field :password, :class => "textstyle", :placeholder => "Password" %></li>
 		<div class="actions">
+<<<<<<< HEAD
 			<%= f.submit "Login", :type => :image, :src => "/images/LoginButton.pn%>
+=======
+			<%= f.submit "Login" %>
+>>>>>>> upstream/master
 		</div>
 	<% end %>
 </ul></center>

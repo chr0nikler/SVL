@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Application Styling */
 
 .container {
@@ -341,3 +342,342 @@ a.previous {
 	text-align: left;
 }
 
+=======
+/* Application Styling */
+
+.container {
+  width: 1024px;
+}
+
+body {
+  background: #99ff99;
+}
+
+header {
+  padding-top: 20px;
+}
+
+header img {
+  padding: 1em;
+}
+
+.newstudent {
+	background-image:url(/images/newstudentbutton.png);
+	padding-left: 129px;
+	padding-top: 80px;
+}
+
+ 
+.done {
+	background-image:url(/images/donebutton.png);
+	padding-left: 129px;
+	padding-top: 60px;
+
+
+}
+
+section h1 {
+  font-size: 200%;
+}
+
+/* Home OR Logged In*/
+
+
+.home {
+	margin-left: 150px;
+}
+.retard {
+	margin-left: 450px;
+}
+.span-8 ul li {
+	list-style-type: none;
+}
+
+.students_search {
+	margin-left: 150px;
+}
+
+.textstyle {
+	border-radius: 10px;
+	background-color: #66ff66;	
+	width: 250px;
+	font-size: 200%;
+	padding: 7px;
+	border: solid 2px;
+}
+
+input.textstyle:focus  {
+	background-color: white;
+}
+
+.createnewstudent {
+	background-image:url(/images/createbutton.png);
+	padding-left: 129px;
+	padding-top: 80px;
+}
+
+
+/* Links */
+
+a {
+  color: #09c;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #069;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #069;
+}
+
+nav {
+  float: right;
+}
+
+nav {
+  padding: 0 0.7em;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  font-size: 140%;
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 0.2em 0;
+  
+}
+
+nav ul li a {
+  padding: 0 5px;
+}
+
+nav ul li a:visited {
+  color: #09c;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+
+
+a.create {
+  margin-top: 1px;
+  display: block;
+  text-align: center;
+  width: 115px;
+  color: #000000;
+  background: #99ff33;
+  font-size: 150%;
+  font-weight: bold;
+  padding: 4px;
+  border-style: solid;
+  border-width: 5px;
+}
+
+.round {
+  -moz-border-radius:    10px;
+  -webkit-border-radius: 10px;
+  border-radius:         10px;
+}
+
+/* Create_Student */
+
+.greenbox {
+	display: table-cell;  
+        width: 350px;  
+        padding: 11px;
+	border: solid 3px;
+	border-radius: 30px;
+	background-color: #66ff66;
+}
+
+.greenbox ul li {
+	list-style-type: none;
+}
+
+.createstyle {
+	border-radius: 10px;
+	background-color: #33ff66;	
+	width: 300px;
+	font-size: 180%;
+	padding: 6px;
+	border: solid 2px;
+}
+
+.orange {
+	border-radius: 10px;
+	background-color: #ffcc66;	
+	width: 250px;
+	font-size: 180%;
+	padding: 6px;
+	border: solid 2px;
+}
+
+.orange:focus {
+	background-color: white;
+}
+
+.createstyle:focus {
+	background-color: white;
+}
+
+]
+.orangebox ul li {
+	list-style-type: none;
+}
+
+.orangebox {
+	display: table-cell;  
+        width: 300px;  
+        padding-right: 2px;
+	border: solid 3px;
+	border-radius: 30px;
+	background-color: #ffcc00;
+}
+
+.box {
+	display: table;  
+        width: 20px;  
+	padding: 5px;
+	border: solid 3px;
+	background-color: #ffcc66;
+}
+
+a.student {
+  margin-top: 1px;
+  display: block;
+  text-align: center;
+  width: 130px;
+  color: #000000;
+  background: #99ff33;
+  font-size: 150%;
+  font-weight: bold;
+  padding: 4px;
+  border-style: solid;
+  border-width: 5px;
+}
+
+/* Searched */
+
+
+
+.searchscreen {
+	font-size: 20px;
+}
+
+.search {
+	border-radius: 10px;
+	background-color: #66ff66;	
+	font-size: 130%;
+	padding: 7px;
+	border: solid 2px;
+	width: 1000px;
+}
+
+
+
+.results {
+	font-size: 30px;
+}
+
+
+.returns {
+	display: table-cell;
+	border: solid 2px;
+	background-color: #ffffff;
+	padding: 6px;
+	border-radius: 8px;
+}
+
+/* Student Log */
+
+.log {
+	display: table-cell;  
+        width: 1024px;  
+	border: solid 3px;
+	border-radius: 30px;
+	background-color: #66ff66;
+}
+
+.span-7 ul li {
+	list-style-type: none;
+}
+
+.span-10 ul li {
+	list-style-type: none;
+}
+
+.span-2 ul li {
+	list-style-type: none;
+}
+.total {
+	width: 60px;
+	font-size: 400%;
+}
+
+a.previous {
+  margin-top: 1px;
+  display: block;
+  text-align: center;
+  width: 160px;
+  color: #000000;
+  background: #99ff33;
+  font-size: 150%;
+  font-weight: bold;
+  padding: 4px;
+ .returns ul li {
+	list-style-type: none;
+} border-style: solid;
+  border-width: 5px;
+}
+
+.span-1 ul li {
+	list-style-type: none;
+}
+
+.impact {
+	border-radius: 10px;
+	background-color: #33ff66;	
+	width: 300px;
+	font-size: 180%;
+	padding: 6px;
+	height: 80px;
+	border: solid 2px;
+}
+
+.impact:focus {
+	background-color: #ffffff;
+}
+
+.loginput {
+	border-radius: 10px;
+	background-color: #33ff66;	
+	width: 300px;
+	font-size: 180%;
+	padding: 6px;
+	border: solid 2px;
+}
+
+/* New Student */
+
+.greentext {
+	width: 320px;
+	font-size: 20px;
+	padding: 6px;
+	border-radius: 7px;
+
+}
+
+.checkbox {
+	text-align: left;
+}
+
+>>>>>>> upstream/master

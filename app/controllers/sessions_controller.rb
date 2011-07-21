@@ -11,7 +11,7 @@ class SessionsController < ApplicationController
       render 'new'
     else 
       sign_in user
-      render 'searches/new'
+      redirect_to logged_in_path
     end
   end
 end

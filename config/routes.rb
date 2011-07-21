@@ -8,7 +8,10 @@ SVL::Application.routes.draw do
 
   match '/previous_services', :to => 'pages#previous_services'
 
+<<<<<<< HEAD
   match '/searched', :to => 'pages#searched'
+=======
+>>>>>>> upstream/master
   match '/logged_in', :to => 'searches#new'
 
   match '/students_new', :to => 'students#new'

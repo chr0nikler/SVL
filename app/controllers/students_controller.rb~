@@ -3,7 +3,7 @@ class StudentsController < ApplicationController
     @student = Student.new
   end
   def create
-    @student = Student.new(params[:student])
+    @student = Student.new(params[:student]
     if @student.save	
       flash[:success] = "Student created successfully"
       render'new'
