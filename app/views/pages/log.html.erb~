@@ -4,9 +4,10 @@
 		<div class="span-7">
 				<center><ul>
 					<br><br>
-					<li><b><font size = "5">Total Service Hours</font></b><input name = "hours" value = "#" class = "total"></li>
+					<% form_tag '/upload', :multipart => true do %>
+					<li><b><font size = "5">Total Service Hours</font></b><%= text_field_tag :service, "", :class => "total"%></li>
 					<br><br><br>
-					<li><%= link_to "View Previous Services", logged_in_path, :class => "previous round" %></li>
+					<li><%= link_to "", previous_services_path, :class => "viewprevious" %></li>
 				</ul></center>
 			</div>
 			<div class= "span-2">
@@ -19,25 +20,28 @@
 				<form>
 					<ul>
 					<br>
-					<li><input name = "dates" placeholder = "Dates" class = "loginput"></li>
-					<li><input name = "org" placeholder = "Nonprofit Organization" class = "loginput"></li>
-					<li><input name = "category" placeholder = "Category" class = "loginput"></li>
-					<li><textarea style = "font-family:Times New Roman" rows = "3" cols = "1" placeholder = "Contribution" class = "impact"></textarea></li>
-					<li><textarea style = "font-family:Times New Roman" rows = "3" cols = "1" placeholder = "Impact" class = "impact"></textarea></li>
-					<li><input name = "newhours" placeholder = "Total Number of Hours" class = "loginput"></li>
+					<li><%= text_field_tag :dates, "", :placeholder => "Dates", :class => "loginput" %></li>
+					<li><%= text_field_tag :organization, "", :placeholder => "Nonprofit Organization", :class => "loginput" %></li>
+					<li><%= text_field_tag :category, "", :placeholder => "Category", :class => "loginput" %></li>
+					<li><%= text_area_tag :contribution, "", :size => "1x1",:placeholder => "Contribution", :class => "loginput"%></li>
+					<li><%= text_area_tag :impact, "", :placeholder => "Impact", :class => "loginput" %></li>
+					<li><%= text_field_tag :hours, "", :placeholder => "Hours Volunteered", :class => "loginput" %></li>
+				
 					</ul>
 				</form>
 			</div>
 			<div class = "span-2">
 				<ul>
-					<br><br>
+					<br>
 					<li><%= link_to "Undo", logged_in_path, :class => "previous round" %></li>
-					<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-					<li><%= link_to "Attach Document", logged_in_path, :class => "previous round" %></li>
+					<br><br><br><br><br><br><br><br><br><br><br><br><br>
+					<li><%= file_field_tag "Attach Document" %></li>
 					<br>
 					<li><%= link_to "Save & Refresh", logged_in_path, :class => "previous round" %></li>
 				</ul>
 			</div>
+		<% end %>
+
 					
 		</container>
 	</body>

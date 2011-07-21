@@ -9,26 +9,13 @@ SVL::Application.routes.draw do
   match '/previous_services', :to => 'pages#previous_services'
 
   match '/searched', :to => 'pages#searched'
-
-<<<<<<< HEAD
-  match '/logged_in', :to => 'pages#logged_in'
-  match '/students_new', :to => 'students#new'
-  match '/index', :to => 'pages#index'
-=======
   match '/logged_in', :to => 'searches#new'
 
   match '/students_new', :to => 'students#new'
   match '/index', :to => 'pages#index'
   match 'students/new', :to => 'students#new'
-
->>>>>>> upstream/master
   match '/signup',  :to => 'users#new'
   match '/signout', :to => 'sessions#destroy'
-<<<<<<< HEAD
-=======
-
-
->>>>>>> upstream/master
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

@@ -24,6 +24,7 @@ SVL::Application.configure do
 	  :authentification => :login,
 	  :user_name => "www",
 	  :password => "secret"
+  }
 
 
 

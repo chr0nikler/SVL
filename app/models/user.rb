@@ -1,9 +1,4 @@
 class User < ActiveRecord::Base
-<<<<<<< HEAD
-  attr_accessor :email, :username, :password, :password_confirmation
-=======
-
->>>>>>> upstream/master
   attr_accessible :email, :username, :password, :password_confirmation, :student
   validates :password_confirmation, :presence => true
   email_regex = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
