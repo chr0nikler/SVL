@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110716222702) do
+ActiveRecord::Schema.define(:version => 20110718033127) do
 
 # Could not dump table "searches" because of following ArgumentError
 #   invalid date

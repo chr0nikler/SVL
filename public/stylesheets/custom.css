@@ -111,7 +111,7 @@ nav ul li {
 
 nav ul li a {
   padding: 0 5px;
-}<%= params[:search] %>
+}
 
 nav ul li a:visited {
   color: #09c;
@@ -241,6 +241,19 @@ article ul li {
 	list-style-type: none;
 }
 
+.results {
+	font-size: 30px;
+}
+
+
+.returns {
+	display: table-cell;
+	border: solid 2px;
+	background-color: #ffffff;
+	padding: 6px;
+	border-radius: 8px;
+}
+
 /* Student Log */
 
 .log {
@@ -277,7 +290,9 @@ a.previous {
   font-size: 150%;
   font-weight: bold;
   padding: 4px;
-  border-style: solid;
+ .returns ul li {
+	list-style-type: none;
+} border-style: solid;
   border-width: 5px;
 }
 

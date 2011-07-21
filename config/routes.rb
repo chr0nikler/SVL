@@ -8,8 +8,6 @@ SVL::Application.routes.draw do
 
   match '/previous_services', :to => 'pages#previous_services'
 
-  match '/searched', :to => 'pages#searched'
-
   match '/logged_in', :to => 'searches#new'
 
   match '/students_new', :to => 'students#new'

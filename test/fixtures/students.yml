@@ -10,8 +10,8 @@ one:
   address2: MyString
   zip: MyString
   email1: MyString
-  confirmed1: false
   email2: MyString
+  confirmed1: false
   confirmed2: false
   telephone1: MyString
   telephone2: MyString
@@ -26,8 +26,8 @@ two:
   address2: MyString
   zip: MyString
   email1: MyString
-  confirmed1: false
   email2: MyString
+  confirmed1: false
   confirmed2: false
   telephone1: MyString
   telephone2: MyString

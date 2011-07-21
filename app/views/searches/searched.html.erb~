@@ -60,7 +60,7 @@
 				<% end %>
 			
 			<% elsif @search.telephone != "" %>
-				<% Student.find(:all, :conditions => ["telephone1 like ?", "%#{@search.telephone}%"]).each do |each| %>
+				<% Student.find(:all, :conditions => ["telephone2 like ?", "%#{@search.telephone}%"]).each do |each| %>
 					<ul>
 					<li><% if each.nil? == false %>
 						<div class = "returns">

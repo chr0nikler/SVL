@@ -16,7 +16,7 @@
 <div class = "orangebox">
 	<br>
 <div class ="box">
-	<%= f.text_field :email1, :class => "orange", :placeholder => "Email Address 1" %>
+	<% f.text_field :email1, :class => "orange", :placeholder => "Email Address 1" %>
     <div class = checkbox>	
 	    <%= f.check_box :confirmed1, :class => "checkbox" %><font size= "3">Confirmed</font>
     </div>
@@ -37,7 +37,7 @@
   </div>
   <br><br><br>
   <div class="other">
-	  <%= link_to "", logged_in_path, :class => "newstudent" %>
+	  <%= link_to "", students_new_path, :class => "newstudent" %>
   </div>
   <br>
   <div class="other">

@@ -2,9 +2,9 @@
 	<div class = "span-8">
 		<center><h1><b>Search Student</b></h1>
 		<ul>
-			<%= form_for @search, :url => searches_path do  |f| %>
+			<%= form_for :search, :url => searches_path do  |f| %>
 				<p>
-				<li><%= f.text_field :firstname, :placeholder => "First Name", :class => "textstyle" %></li>
+				<li><%= f.text_field :firstname,:placeholder => "First Name", :class => "textstyle" %></li>
 				<li><%= f.text_field :lastname, :placeholder => "Last Name", :class => "textstyle" %></li>
 				<li><%= f.text_field :IDnumber, :placeholder => "ID number", :class => "textstyle" %></li>
 				<li><%= f.text_field :email, :placeholder => "Email", :class => "textstyle" %></li>
