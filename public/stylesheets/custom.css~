@@ -319,13 +319,13 @@ a.previous {
 
 .viewprevious {
 	background-image:url(/images/viewpreviousservices.png);
-	padding-left: 50px;
+	padding-left: 129px;
 	padding-top: 60px;
 }
 
 .file {
 	background-image:url(/images/viewpreviousservices.png);
-	padding-left: 129px;
+	padding-left: 50px;
 	padding-top: 60px;
 }
 /* New Student */
@@ -582,7 +582,9 @@ a.student {
 	width: 1000px;
 }
 
-
+article ul li {
+	list-style-type: none;
+}
 
 .results {
 	font-size: 30px;
